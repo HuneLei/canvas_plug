@@ -1,0 +1,38 @@
+.button_class {
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+  margin-bottom: 30rpx;
+  font-size: 30rpx;
+}
+
+.button_list {
+  display: flex;
+}
+
+.myImage {
+  width: 100%;
+  height: 520px;
+  background: #fff;
+  /* border: 1px solid; */
+}
+
+#myCanvas {
+  width: 100%;
+  height: 520px;
+  background: #fff;
+  /* border: 1px solid; */
+}
+
+.container {
+  position: relative;
+  padding: 0rpx;
+  width: 100%;
+  height: 100%;
+}
+
+.canvas_area {
+  width: 100%;
+  height: calc(100% - 50px);
+  background-color: #f8f8f8;
+  position: relative;
+}

@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="canvas_area" wx:if="{{myCanvas}}">
+    <canvas canvas-id="myCanvas" id="myCanvas" />
+  </view>
+  <movable-area class="canvas_area" wx:else bindtouchmove="touchmoveCallback" bindtouchstart="touchstartCallback">
+    <image class="myImage" src='../../img/test.jpg'></image>
+    <movable-view style="height: 60px; width: 60px" x="{{x}}" y="{{y}}" direction="all" bindchange="bindchange" scale-min="0.5" scale-max="4" scale-value="{{scale}}" animation>
+      <!-- <image style="height: 100%; width: 100%" src='../../img/WEIXING.png'></image> -->
+      <view class="container">
+        <view bindtouchmove="touchmoveCallback" bindtouchstart="touchstartCallback">
+          <image id="movable_image" src="../../img/WEIXING.png" style="width: {{ touch.scaleWidth }}px;height: {{ touch.scaleHeight }}px" bindload="bindload"></image>
+        </view>
+      </view>
+    </movable-view>
+  </movable-area>
+  <view class='button_list'>
+    <!-- <button class='button_class' bindtap='chooseImage'>导入图片</button> -->
+    <button class='button_class' bindtap='changeImage'>合成</button>
+    <button class='button_class' bindtap='saveImage'>保存</button>
+    <button class='button_class' bindtap='addImage'>+</button>
+    <button class='button_class' bindtap='cutImage'>-</button>
+  </view>
+</view>
