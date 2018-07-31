@@ -1,0 +1,12 @@
+<view class="weui-loadmore weui-loadmore_line" hidden="{{!searchLoading}}">
+<view class="weui-loadmore__tips weui-loadmore__tips_in-line">正在加载<view class="weui-loading"></view></view>
+</view>
+<view class="weui-loadmore weui-loadmore_line" hidden="{{!searchLoadingComplete}}">
+<view class="weui-loadmore__tips weui-loadmore__tips_in-line">已加载全部</view>
+</view>
+<view class="weui-loadmore weui-loadmore_line" hidden="{{!isHideLoadMore}}">
+<view class="weui-loadmore__tips weui-loadmore__tips_in-line">上拉获取更多</view>
+</view>
+<view class="weui-loadmore weui-loadmore_line" hidden="{{!isNoData}}">
+<view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无数据</view>
+</view>
